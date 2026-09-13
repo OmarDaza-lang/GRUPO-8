@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Turismo Sprienfield</title>
+</head>
+
+<body>
+    <main>
+        <div id="contenedor-contacto">
+            <article>
+            <h2>Contactanos a traves de:</h2>
+            <ul>
+                <li> <a href="tel:+541159875520">WhatsApp</a></li>
+                <li> <a href="mailto:ciudadspriendfield@gmail.com">Correo electrónico</a></li>
+                <li> <a href="https://www.instagram.com/TurismoSpiendfield/" target="_blank" rel="noopener noreferrer">seguinos en instagram</a></li>
+            </ul>    
+            </article>
+            <article>
+                <h3>Podes visitarnos en:</h3>
+                <p>Av. Siempre Viva 123, Ciudad Spriendfield</p>
+                <p>Horario: Lunes a Viernes de 9:00 a 18:00</p>
+            </article>
+            <article id="formulario">
+                <h2>Tambien podes escribirnos por aca:</h2>
+                <form id="form"  action="/enviar"  method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">  <!-- required --> 
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"> <!-- required-->
+                    <label for="consulta">Consulta</label>
+                    <textarea id="consulta" rows="4"></textarea>
+                    <button for="enviar">Enviar</button>
+                    <p id="mensaje"></p>   
+                </form>
+            </article>        
+        </div> 
+    </main>
+    <footer id="footer">
+        <img src="img/logo.jps.png" alt="logo Ciudad spriendfield" height="100" width="100">
+        <p>Visita nuestra ciudad y descubre nuestra belleza</p>
+        <p>2027 Ciudad Sprienfield. Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
