@@ -1,0 +1,50 @@
+/* Variables */
+:root {
+    --azul: #0072CE;
+    --amarillo: #FFD90F;
+}
+
+/* Header */
+header {
+    background-color: var(--amarillo);
+    color: #003b73;
+    text-align: center;
+    border-bottom:4px solid var(--azul);
+}
+
+/* Navegación */
+nav {
+    background-color: var(--azul);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: flex;
+}
+
+nav a {
+    padding: 5px 14px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #003B73;
+    color: var(--amarillo);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--azul);
+    color: #FFFFFF;
+    text-align: center;
+    border-top: 6px solid var(--amarillo);
+}
+
+footer a {
+    color: var(--amarillo);
+}
