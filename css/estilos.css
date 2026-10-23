@@ -2,6 +2,17 @@
 :root {
     --azul: #0072CE;
     --amarillo: #FFD90F;
+    --fuente-principal: 'DynaPuff', cursive;
+}
+
+*{
+
+    box-sizing: border-box;
+
+    padding: 10;
+
+    margin: 10;
+
 }
 
 /* Header */
@@ -10,6 +21,20 @@ header {
     color: #003b73;
     text-align: center;
     border-bottom:4px solid var(--azul);
+}
+
+/* Body */
+body {
+    font-family: var(--fuente-principal);
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6;
+    color: var(--color-texto-claro);
+    background-color: var(--color-fondo);
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /* Navegación */
