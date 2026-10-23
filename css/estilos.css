@@ -25,6 +25,11 @@ header {
 
 /* Body */
 body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+
     font-family: var(--fuente-principal);
     font-size: 18px;
     font-weight: normal;
@@ -35,6 +40,42 @@ body {
     max-width: 1200px; 
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    height: 100%;
+    background-image: url(../imgs/estatuaJeremiasSpringfield.jpg);
+    background-repeat: repeat-y;
+    background-size: contain;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15vw;
+    height: 100%;
+    background-image: url(../imgs/estatuaJeremiasSpringfield.jpg);
+    background-repeat: repeat-y;
+    background-size: contain;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.contenido-central {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    min-height: 100vh;
+    z-index: 0;
 }
 
 /* Navegación */
