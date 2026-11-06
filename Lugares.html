@@ -34,6 +34,10 @@
             </nav>
         </header>
         <main>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="checkDesplegarDatos">
+                <label class="form-check-label" for="checkDesplegarDatos">Mostrar datos curiosos</label>
+            </div>
             <section id="Gastronomia">
                 <h2>Gastronomía</h2>
                 <section id="Taberna">
@@ -43,11 +47,11 @@
                     Ubicada cerca del centro de la ciudad, al lado de la Primera Igleseia de Springfield.
                 </p>
                 <img src="./imgs/Moes.webp" alt="Moe's" height="200">
-                <p>
-                    <strong>Dato curioso: </strong>A pesar de haber iniciado como una taberna, como es también a día de hoy, el lugar fue cambiando de rubro múltiples veces,
-                    como por ejemplo un restaurante de sushi, o un restaurante familiar
-                </p>
-                <div class="fila-imagenes">
+                <div class="fila-imagenes ocultable d-none">
+                    <p>
+                        <strong>Dato curioso: </strong>A pesar de haber iniciado como una taberna, como es también a día de hoy, el lugar fue cambiando de rubro múltiples veces,
+                        como por ejemplo un restaurante de sushi, o un restaurante familiar
+                    </p>
                     <figure class="item-imgs">
                         <img src="./imgs/tokyo-roes.jpg" alt="Restaurante-Sushi" height="150">
                         <figcaption> Moe's como restaurante de sushi </figcaption>
@@ -80,7 +84,7 @@
                     Para los amantes de los mariscos pueden visitar el buffet del Capitán McCallister, con una amplia variedad de platos para todos los gustos.
                 </p>
                 <img src="./imgs/Holandes cocinante.webp" alt="Holandes-cocinante" height="200">
-                <p>
+                <p class="ocultable">
                     <strong>Dato curioso: </strong>El restaurante tenía una política de "Todo lo que pueda comer", hasta que el ciudadano Homero Simpson casi arruina el
                     local.
                 </p>
@@ -96,13 +100,17 @@
                     dirigida por el Reverendo Alegría.
                 </p>
                 <img src="./imgs/iglesia.jpg" alt="Iglesia" height="200">
-                <p>
-                    <strong>Dato curioso: </strong>La iglesia estuvo 2 veces bajo el control del dueño de la planta nuclear de Springfield, Charles Montgomery Burns. 
-                    La primera debido a que 2 ciudadanos (Homero y Bart Simpson) destruyeron la iglesia y el señor Burns se ofreció a repararla, debido a que
-                    el consejo de la iglesia no podía. La segunda también fue debido a falta de dinero y el señor Burns patrocinó la iglesia.
-                </p>
-                <p>Acá se puede ver una "godcam" agregada luego de una de estas situaciones.</p>
-                <img src="./imgs/godcam.jpg" alt="Godcam" height="150">
+                <div class="ocultable d-none">
+                    <p>
+                        <strong>Dato curioso: </strong>La iglesia estuvo 2 veces bajo el control del dueño de la planta nuclear de Springfield, Charles Montgomery Burns. 
+                        La primera debido a que 2 ciudadanos (Homero y Bart Simpson) destruyeron la iglesia y el señor Burns se ofreció a repararla, debido a que
+                        el consejo de la iglesia no podía. La segunda también fue debido a falta de dinero y el señor Burns patrocinó la iglesia.
+                    </p>
+                    <p>
+                        Acá se puede ver una "godcam" agregada luego de una de estas situaciones.
+                    </p>
+                    <img src="./imgs/godcam.jpg" alt="Godcam" height="150">
+                </div>
                 </section>
                 <section id="Mazmorra">
                     <h3>La mazmorra del androide</h3>
@@ -135,6 +143,7 @@
             </section>
             
             <section id="puntos-de-interes">
+                <h2>Puntos de Interés</h2>
                 <section id="Planta-nuclear">
                     <h3>Central nuclear</h3>
                     <p>
@@ -144,10 +153,11 @@
                         las lluvias ácidas y peligros nucleares constantes que azotan a la ciudad.
                     </p>
                     <img src="./imgs/96.webp" alt="Planta nuclear" width="400">
-                    <p>
-                        <strong>Dato curioso: </strong>Dentro de la planta se pueden observar animales curiosos, como ratas luminiscentes y peces de 3 ojos
-                    </p>
-                    <div class="fila-imagenes">
+                    
+                    <div class="fila-imagenes ocultable d-none">
+                        <p>
+                            <strong>Dato curioso: </strong>Dentro de la planta se pueden observar animales curiosos, como ratas luminiscentes y peces de 3 ojos
+                        </p>
                         <figure class="item-imgs">
                             <img src="./imgs/Blinky.webp" alt="Blinky (Pez de 3 ojos)" height="150"> 
                             <figcaption> Blinky </figcaption>
@@ -161,7 +171,7 @@
                         convirtiendo este terreno en una especie de punto de referencia de la ciudad.
                     </p>
                     <img src="./imgs/vertedero-neumaticos.webp" alt="Vertedero-de-neumaticos" height="200">
-                    <p>
+                    <p class="ocultable d-none">
                         <strong>Dato curioso: </strong>El olor de los neumáticos incendiados se puede percibir en 46 estados.
                     </p>
                 </section>
