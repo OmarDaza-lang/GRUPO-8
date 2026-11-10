@@ -2,17 +2,16 @@
 :root {
     --azul: #0072CE;
     --amarillo: #FFD90F;
+    --color-fondo: #E6F5FC;
+    --color-texto: #1E293B;
+    --color-texto-fuerte: #004085;
     --fuente-principal: 'DynaPuff', cursive;
 }
 
-*{
-
+* {
     box-sizing: border-box;
-
     padding: 10;
-
     margin: 10;
-
 }
 
 /* Header */
@@ -35,10 +34,29 @@ body {
     font-weight: normal;
     font-style: normal;
     line-height: 1.6;
-    color: var(--color-texto-claro);
-    background-color: var(--color-fondo);
+    color: var(--color-texto);
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+body h2 {
+    text-decoration: underline;
+}
+
+body strong {
+    color: var(--color-texto-fuerte);
+}
+
+.form-check {
+    padding-left: 55px;
+    min-width: 20px;
+    max-width: 280px;
+    margin-top: 10px;
+    color: var(--color-texto-fuerte);
+    outline-style: solid;
+    outline-color: var(--azul);
+    outline-width: 200;
+    border-radius: 15px;
 }
 
 body::before {
@@ -69,7 +87,7 @@ body::after {
 }
 
 .contenido-central {
-    background-color: #ffffff;
+    background-color: var(--color-fondo);
     width: 100%;
     max-width: 85vw;
     padding: 10px;
