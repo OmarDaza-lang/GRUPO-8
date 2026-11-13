@@ -7,10 +7,12 @@ const darkModeLabel = document.getElementById("darkModeLabel");
 const contenidoCentral = document.getElementById("contenido-central");
 
 
-mostrarDatos.addEventListener("click", () => 
+if(mostrarDatos) {
+    mostrarDatos.addEventListener("click", () => 
     {
         datosCuriosos.forEach(dato => {dato.classList.toggle('d-none');})
     });
+}
 
 darkModeCheck.addEventListener("click", () => 
     {

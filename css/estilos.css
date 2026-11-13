@@ -72,7 +72,7 @@ body::before {
 body.dark-mode::before,
 body.dark-mode::after {
     background-color: var(--color-fondo-oscuro);
-    transition: 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 body::after {
@@ -106,7 +106,7 @@ body::after {
 #checkDarkMode {
     background-color: var(--amarillo);
     max-width: 150px;
-    min-width: 20px;
+    min-width: 15px;
     max-height: 50px;
 }
 
@@ -115,7 +115,6 @@ body::after {
     padding-top: 3px;
     min-width: 20px;
     max-width: 280px;
-    margin-top: 10px;
     color: var(--color-texto-fuerte);
     outline-style: solid;
     outline-color: var(--azul);
