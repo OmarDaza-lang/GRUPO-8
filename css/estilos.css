@@ -3,7 +3,9 @@
     --azul: #0072CE;
     --amarillo: #FFD90F;
     --color-fondo: #E6F5FC;
+    --color-fondo-oscuro: #0B132B;
     --color-texto: #1E293B;
+    --color-texto-oscuro: #E2E8F0;
     --color-texto-fuerte: #004085;
     --fuente-principal: 'DynaPuff', cursive;
 }
@@ -39,6 +41,13 @@ body {
     padding: 0 1rem;
 }
 
+body.dark-mode .contenido-central {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-oscuro);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
 body h2 {
     text-decoration: underline;
 }
@@ -54,10 +63,16 @@ body::before {
     left: 0;
     width: 10vw;
     height: 100%;
-    background-image: url(../imgs/estatuaJeremiasSpringfield.jpg);
+    background-image: url(../imgs/estatuaJeremiasSpringfield.png);
     background-repeat: repeat-y;
     background-size: contain;
     z-index: -1;
+}
+
+body.dark-mode::before,
+body.dark-mode::after {
+    background-color: var(--color-fondo-oscuro);
+    transition: 0.3s;
 }
 
 body::after {
@@ -67,7 +82,7 @@ body::after {
     right: 0;
     width: 10vw;
     height: 100%;
-    background-image: url(../imgs/estatuaJeremiasSpringfield.jpg);
+    background-image: url(../imgs/estatuaJeremiasSpringfield.png);
     background-size: contain;
     background-repeat: repeat-y;
     transform: scaleX(-1);
@@ -88,8 +103,16 @@ body::after {
     border-radius: 10px;
 }
 
-.form-check {
+#checkDarkMode {
+    background-color: var(--amarillo);
+    max-width: 150px;
+    min-width: 20px;
+    max-height: 50px;
+}
+
+#checkDatos {
     padding-left: 55px;
+    padding-top: 3px;
     min-width: 20px;
     max-width: 280px;
     margin-top: 10px;
