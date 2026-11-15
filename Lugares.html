@@ -48,18 +48,63 @@
                 <input class="form-check-input" type="checkbox" role="switch" id="checkDesplegarDatos">
                 <label class="form-check-label" for="checkDesplegarDatos">Mostrar datos curiosos</label>
             </div>
+            <!-- Carrusel de gastronomía -->
             <section id="Gastronomia">
                 <h2>Gastronomía</h2>
-                <section id="Taberna">
-                <h3>Taberna de Moe</h3>
                 <p>
-                    Puede pasar por la taberna a tomar una cerveza, o el famoso trago "Llamarada Moe" junto a sus amigos de jueves a martes. 
-                    Ubicada cerca del centro de la ciudad, al lado de la Primera Igleseia de Springfield.
+                    Para los amantes de los platos gourmetes o tragos estos son algunos lugares que deberían visitar.
                 </p>
-                <img src="./imgs/Moes.webp" alt="Moe's" height="200">
+                <div id="carruselGastro" class="carousel carousel-dark slide" data-bs-target="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carruselGastro" data-bs-slide-to="0" class="active"></li>
+                        <button type="button" data-bs-target="#carruselGastro" data-bs-slide-to="1"></li>
+                        <button type="button" data-bs-target="#carruselGastro" data-bs-slide-to="2"></li>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block mx-auto" src="./imgs/Moes.webp" alt="First slide" height="200">
+                            <div class="text-center mt-3 px-4">
+                                <h3>Taberna de Moe</h3>
+                                <p>
+                                    Puede pasar por la taberna a tomar una cerveza, o el famoso trago "Llamarada Moe" junto a sus amigos de jueves a martes. 
+                                    Ubicada cerca del centro de la ciudad, al lado de la Primera Igleseia de Springfield. <br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block mx-auto" src="./imgs/Krusty_Burger.webp" alt="Second slide" height="200">
+                            <div class="text-center mt-3 px-4">
+                                <h3>Krusty Burger</h3>
+                                <p> 
+                                    Si son amantes de las hamburguesas pueden visitar la cadena de comida rápida más famosa de la ciudad, para probar el famoso combo "Krusty meal", o si
+                                    está disponible, el tan ansiado por todos los ciudadanos de la ciudad y alrededores, "Ribwich"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block mx-auto" src="./imgs/HolandesCocinante.webp" alt="Third slide" height="200" width="400">
+                            <div class="text-center mt-3 px-4">
+                                <h3>Holandes Cocinante</h3>
+                                <p>
+                                    Para los amantes de los mariscos pueden visitar el buffet del Capitán McCallister, con una amplia variedad de platos para todos los gustos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" data-bs-target="#carruselGastro" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" data-bs-target="#carruselGastro" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </a>
+                </div>
+                <section id="datosCuriososGatronomia">
                 <div class="fila-imagenes ocultable d-none">
+                    <h4><strong>Dato curioso sobre Moe's</strong></h4>
                     <p>
-                        <strong>Dato curioso: </strong>A pesar de haber iniciado como una taberna, como es también a día de hoy, el lugar fue cambiando de rubro múltiples veces,
+                        A pesar de haber iniciado como una taberna, como es también a día de hoy, el lugar fue cambiando de rubro múltiples veces,
                         como por ejemplo un restaurante de sushi, o un restaurante familiar
                     </p>
                     <figure class="item-imgs">
@@ -70,49 +115,75 @@
                         <img src="./imgs/Uncle-moes.webp" alt="Restaurante-Familiar" height="150">
                         <figcaption> Moe's como restaurante familiar </figcaption>
                     </figure>
-                </div>
-                </section>
-                <section id="Krusty-burger">
-                <h3>Krusty Burger</h3>
-                <p> 
-                    Si son amantes de las hamburguesas pueden visitar la cadena de comida rápida más famosa de la ciudad, para probar el famoso combo "Krusty meal", o si
-                    está disponible, el tan ansiado por todos los ciudadanos de la ciudad y alrededores, "Ribwich"
-                </p>
-                <div class="fila-imagenes">
-                    <div class="item-imgs">
-                        <img src="./imgs/Krusty_Burger.webp" alt="Krusty-burger" height="200">
-                    </div>
+                    <h4><strong>Dato curioso sobre el Holandes Cocinante</strong></h4>
+                    <p>
+                        El restaurante tenía una política de "Todo lo que pueda comer", hasta que el ciudadano Homero Simpson casi arruina el local.
+                    </p>
                     <figure class="item-imgs">
-                        <img src="./imgs/Ribwich.jpg" alt="Ribwich" height="200">
-                        <figcaption> El famoso "Ribwich" </figcaption>
+                        <img src="./imgs/holandesCocinanteHomero.jpg" alt="Homero en el holandes cocinante" height="150">
+                        <figcaption>Homero siendo hechado</figcaption>
                     </figure>
                 </div>
                 </section>
-                <section id="Holandes-cocinante">
-                <h3>Holandes Cocinante</h3>
-                <p>
-                    Para los amantes de los mariscos pueden visitar el buffet del Capitán McCallister, con una amplia variedad de platos para todos los gustos.
-                </p>
-                <img src="./imgs/HolandesCocinante.webp" alt="Holandes-cocinante" height="200">
-                <p class="ocultable">
-                    <strong>Dato curioso: </strong>El restaurante tenía una política de "Todo lo que pueda comer", hasta que el ciudadano Homero Simpson casi arruina el
-                    local.
-                </p>
-                </section>
             </section>
-            
+            <!-- Carrusel Entretenimiento -->
             <section id="Cultura-Entretenimiento">
                 <h2>Cultura y entretenimiento</h2>
-                <section id="Iglesia">
-                <h3>Primera Iglesia de Springfield</h3>
                 <p>
-                    Puede escuchar la palabra del Señor todos los domingos como la mayoría de ciudadanos en este lugar. Ubicada cerca del centro, es 
-                    dirigida por el Reverendo Alegría.
+                    Para la gente que le gusta la cultura general o pasar una tarde en familia estos son algunos lugares que deberían visitar.
                 </p>
-                <img src="./imgs/iglesia.jpg" alt="Iglesia" height="200">
+                <div id="carruselEntretenimiento" class="carousel carousel-dark slide" data-bs-target="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carruselEntretenimiento" data-bs-slide-to="0" class="active"></li>
+                        <button type="button" data-bs-target="#carruselEntretenimiento" data-bs-slide-to="1"></li>
+                        <button type="button" data-bs-target="#carruselEntretenimiento" data-bs-slide-to="2"></li>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block mx-auto" src="./imgs/iglesia.jpg" alt="First slide" height="200">
+                            <div class="text-center mt-3 px-4">
+                                <h3>Primera Iglesia de Springfield</h3>
+                                <p>
+                                    Puede escuchar la palabra del Señor todos los domingos como la mayoría de ciudadanos en este lugar. Ubicada cerca del centro, es 
+                                    dirigida por el Reverendo Alegría.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block mx-auto" src="./imgs/Mazmorra-del-Androide.webp" alt="Second slide" height="200">
+                            <div class="text-center mt-3 px-4">
+                                <h3>La mazmorra del androide</h3>
+                                <p>
+                                    Para los frikis y amantes de los coleccionables pueden visitar la tienda de Jeff Albertson, Mazmorra del Androide, donde podrán encontrar una 
+                                    amplia varidedad de cómics y figuras, entre otras cosas.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block mx-auto" src="./imgs/Krustylu_studios.webp" alt="Third slide" height="200" width="400">
+                            <div class="text-center mt-3 px-4">
+                                <h3>Estudios Krustylu</h3>
+                                <p>
+                                    Puede visitar el estudio donde se graban los programas de Krusty el payaso, para presenciarlos en vivo y probablemente aparecer en televisión usted
+                                    mismo. Con la oportunidad de conocer a Krusty.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" data-bs-target="#carruselEntretenimiento" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" data-bs-target="#carruselEntretenimiento" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </a>
+                </div>
+                <section id="datosCuriososEntretenimiento">
                 <div class="ocultable d-none">
+                    <h4><strong>Datos curiosos de la Iglesia</strong></h4>
                     <p>
-                        <strong>Dato curioso: </strong>La iglesia estuvo 2 veces bajo el control del dueño de la planta nuclear de Springfield, Charles Montgomery Burns. 
+                        La iglesia estuvo 2 veces bajo el control del dueño de la planta nuclear de Springfield, Charles Montgomery Burns. 
                         La primera debido a que 2 ciudadanos (Homero y Bart Simpson) destruyeron la iglesia y el señor Burns se ofreció a repararla, debido a que
                         el consejo de la iglesia no podía. La segunda también fue debido a falta de dinero y el señor Burns patrocinó la iglesia.
                     </p>
@@ -120,26 +191,13 @@
                         Acá se puede ver una "godcam" agregada luego de una de estas situaciones.
                     </p>
                     <img src="./imgs/godcam.jpg" alt="Godcam" height="150">
-                </div>
-                </section>
-                <section id="Mazmorra">
-                    <h3>La mazmorra del androide</h3>
+
+                    <h4><strong>Dato curioso sobre Estudios Krustylu</strong></h4>
                     <p>
-                        Para los frikis y amantes de los coleccionables pueden visitar la tienda de Jeff Albertson, Mazmorra del Androide, donde podrán encontrar una 
-                        amplia varidedad de cómics y figuras, entre otras cosas.
-                    </p>
-                    <img src="./imgs/Mazmorra-del-Androide.webp" alt="Mazmorra-del-androide" height="200">
-                </section>
-                <section id="Estudios-Krustylu">
-                    <h3>Estudios Krustylu</h3>
-                    <p>
-                        Puede visitar el estudio donde se graban los programas de Krusty el payaso, para presenciarlos en vivo y probablemente aparecer en televisión usted
-                        mismo. Con la oportunidad de conocer a Krusty, así como a Tomy y Daly, personajes de otro famoso programa de la ciudad.
+                        Así como puede conocer a Krusty el payaso, también puede tener la posibilidad de conocer a Tomy y Daly,
+                        personajes de otro famoso programa de la ciudad.
                     </p>
                     <div class="fila-imagenes">
-                        <div class="item-imgs">
-                            <img src="./imgs/Krustylu_studios.webp" alt="Estudios-Krustylu" height="200">
-                        </div>
                         <figure class="item-imgs">
                             <img src="./imgs/tomy-y-daly.webp" alt="Tomy-y-Daly" height="200">
                             <figcaption> Tomy y Daly </figcaption>
@@ -149,41 +207,69 @@
                             <figcaption> Krusty el payaso </figcaption>
                         </figure>
                     </div>
+                </div>
                 </section>
             </section>
-            
+            <!-- Carrusel Puntos de Interes -->
             <section id="puntos-de-interes">
                 <h2>Puntos de Interés</h2>
-                <section id="Planta-nuclear">
-                    <h3>Central nuclear</h3>
-                    <p>
-                        La famosa central nuclear de Springfield, ubicada al oeste de la ciudad, construída y fundada a mediadios del siglo XX.
-                        Es el lugar dónde se genera <strong>toda</strong> la energía eléctrica de la ciudad. <br>
-                        Puede visitar este enigmático lugar para conocer cómo es que se trabaja acá, conocer a sus empleados y el por qué se generan los fenómenos como
-                        las lluvias ácidas y peligros nucleares constantes que azotan a la ciudad.
-                    </p>
-                    <img src="./imgs/96.webp" alt="Planta nuclear" width="400">
-                    
+                <p>
+                    Estos son algunos puntos que deberían visitar si quieren conocer un poco más de esta hermosa ciudad.
+                </p>
+                <div id="carruselInteres" class="carousel carousel-dark slide" data-bs-target="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carruselInteres" data-bs-slide-to="0" class="active"></li>
+                        <button type="button" data-bs-target="#carruselInteres" data-bs-slide-to="1"></li>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block mx-auto" src="./imgs/plantaNuclear.webp" alt="First slide" height="200">
+                            <div class="text-center mt-3 px-4">
+                                <h3>Central nuclear</h3>
+                                <p>
+                                    La famosa central nuclear de Springfield, ubicada al oeste de la ciudad, construída y fundada a mediadios del siglo XX.
+                                    Es el lugar dónde se genera <strong>toda</strong> la energía eléctrica de la ciudad. <br>
+                                    Puede visitar este enigmático lugar para conocer cómo es que se trabaja acá, conocer a sus empleados y el por qué se generan los fenómenos como
+                                    las lluvias ácidas y peligros nucleares constantes que azotan a la ciudad.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block mx-auto" src="./imgs/vertederoDeNeumaticos.jpg" alt="Second slide" height="200">
+                            <div class="text-center mt-3 px-4">
+                                <h3>Vertedero de neumáticos</h3>
+                                <p>
+                                    Un terreno donde se desechan neumáticos que luego se incendian. El fuego se volvió más popular con el paso de los años, ya que lleva en llamas por décadas,
+                                    convirtiendo este terreno en una especie de punto de referencia de la ciudad.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" data-bs-target="#carruselInteres" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" data-bs-target="#carruselInteres" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </a>
+                </div>
+                <section id="datosCuriososInteres">
                     <div class="fila-imagenes ocultable d-none">
+                        <h4><strong>Dato curioso sobre Planta Nuclear</strong></h4>
                         <p>
-                            <strong>Dato curioso: </strong>Dentro de la planta se pueden observar animales curiosos, como ratas luminiscentes y peces de 3 ojos
+                            Dentro de la planta se pueden observar animales curiosos, como ratas luminiscentes y peces de 3 ojos
                         </p>
                         <figure class="item-imgs">
                             <img src="./imgs/Blinky.webp" alt="Blinky (Pez de 3 ojos)" height="150"> 
                             <figcaption> Blinky </figcaption>
                         </figure>
+                        <h4><strong>Dato curioso sobre el vertedero</strong></h4>
+                        <p>
+                            El olor de los neumáticos incendiados se puede percibir en 46 estados.
+                        </p>
+                        <img src="./imgs/vertedero-estados.jpg" alt="Vertedero de neumaticos" height="150">
                     </div>
-                </section>
-                <section id="vertedero-de-neumaticos">
-                    <h3>Vertedero de neumáticos</h3>
-                    <p>
-                        Un terreno donde se desechan neumáticos que luego se incendian. El fuego se volvió más popular con el paso de los años, ya que lleva en llamas por décadas,
-                        convirtiendo este terreno en una especie de punto de referencia de la ciudad.
-                    </p>
-                    <img src="./imgs/vertedero-neumaticos.webp" alt="Vertedero-de-neumaticos" height="200">
-                    <p class="ocultable d-none">
-                        <strong>Dato curioso: </strong>El olor de los neumáticos incendiados se puede percibir en 46 estados.
-                    </p>
                 </section>
             </section>
         </main>

@@ -6,7 +6,7 @@
     --color-fondo-oscuro: #0B132B;
     --color-texto: #1E293B;
     --color-texto-oscuro: #E2E8F0;
-    --color-texto-fuerte: #004085;
+    --color-texto-fuerte: #0056b3;
     --fuente-principal: 'DynaPuff', cursive;
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 body[data-bs-theme="oscuro"]::before, 
-body[data-bs-theme]::after {
+body[data-bs-theme="oscuro"]::after {
     background-color: var(--color-fondo-oscuro);
     color: var(--color-texto-oscuro);
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -152,6 +152,23 @@ body::after {
     margin-top: 8px;
     font-size: 16px;
     text-align: center;
+}
+
+#carruselGastro, 
+#carruselEntretenimiento,
+#carruselInteres {
+    background-color: #FFFFFF;
+    border: 2px solid #DEE2E6;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.05);
+}
+
+[data-bs-theme="oscuro"] #carruselGastro,
+[data-bs-theme="oscuro"] #carruselEntretenimiento,
+[data-bs-theme="oscuro"] #carruselInteres {
+    background-color: #041f3a;
+    border-color: #2C3034;
 }
 
 /* Navegación */
