@@ -18,23 +18,55 @@ document.addEventListener('DOMContentLoaded', () => {
         darkModeLabel.textContent = "Modo oscuro"
     }
 
-    darkModeCheck.addEventListener("change", function () {
+    if (darkModeCheck) {
+        darkModeCheck.addEventListener("change", function () {
         if (this.checked) {
             document.body.setAttribute('data-bs-theme', 'oscuro');
-            darkModeLabel.textContent = "Modo claro";
+            if (darkModeLabel) darkModeLabel.textContent = "Modo claro";
             localStorage.setItem('theme', 'oscuro');
         }
         else {
             document.body.setAttribute('data-bs-theme', 'claro');
-            darkModeLabel.textContent = "Modo oscuro";
+            if (darkModeLabel) darkModeLabel.textContent = "Modo oscuro";
             localStorage.setItem('theme', 'claro');
         }
     });
+    }
+    
+    window.addEventListener('storage', (event) => {
+        if (event.key === 'theme') {
+            const temaSincronizado = event.newValue;
+            document.body.setAttribute('data-bs-theme', temaSincronizado);
+            if (darkModeCheck) {
+                darkModeCheck.checked = (temaSincronizado === 'oscuro');
+            }
+            if (darkModeLabel) {
+                darkModeLabel.textContent = (temaSincronizado === 'oscuro') ? "Modo claro" : "Modo oscuro";
+            }
+        }
+    })
 });
 
 if(mostrarDatos) {
     mostrarDatos.addEventListener("click", () => {
         datosCuriosos.forEach(dato => {dato.classList.toggle('d-none');})
     });
+
+    function actualizarDatosCuriosos() {
+    datosCuriosos.forEach(e => {
+        if(mostrarDatos.checked) {
+            e.classList.remove('d-none');
+        }
+        else {
+            e.classList.add('d-none');
+        }
+    })
+    }
+
+    actualizarDatosCuriosos();
+
+    mostrarDatos.addEventListener('change', actualizarDatosCuriosos);
 }
+
+
 

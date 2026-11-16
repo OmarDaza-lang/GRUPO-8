@@ -133,6 +133,7 @@ body::after {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
 }
 
@@ -149,14 +150,15 @@ body::after {
 }
 
 .item-imgs figcaption {
-    margin-top: 8px;
+    margin-top: 6px;
     font-size: 16px;
     text-align: center;
 }
 
 #carruselGastro, 
 #carruselEntretenimiento,
-#carruselInteres {
+#carruselInteres,
+.ocultable {
     background-color: #FFFFFF;
     border: 2px solid #DEE2E6;
     border-radius: 12px;
@@ -166,9 +168,14 @@ body::after {
 
 [data-bs-theme="oscuro"] #carruselGastro,
 [data-bs-theme="oscuro"] #carruselEntretenimiento,
-[data-bs-theme="oscuro"] #carruselInteres {
+[data-bs-theme="oscuro"] #carruselInteres,
+[data-bs-theme="oscuro"] .ocultable {
     background-color: #041f3a;
     border-color: #2C3034;
+}
+
+.ocultable {
+    text-align: center;
 }
 
 /* Navegación */
