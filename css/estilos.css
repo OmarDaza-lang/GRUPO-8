@@ -178,6 +178,68 @@ body::after {
     text-align: center;
 }
 
+.cont-principal {
+    max-width: 1140px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+}
+
+.intro-ciudad {
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.grilla-secciones {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .grilla-secciones {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.tarjeta-seccion {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solud #dee2e6;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.05);
+}
+
+.boton-enlace {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 0.5rem 1 rem;
+    border-radius: 6px;
+    background-color: #0d6efd;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.boton-enlace:hover,
+.boton-enlace:focus-visible {
+    background-color: #0b5ed7;
+    color: #ffffff;
+}
+
+[data-bs-theme="oscuro"] .intro-ciudad {
+    border-bottom-color: #373b3e;
+}
+
+[data-bs-theme] .tarjeta-seccion {
+    background-color: #2b3035;
+    border-color: #373b3e;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.25);
+}
+
 /* Navegación */
 nav {
     background-color: var(--azul);
