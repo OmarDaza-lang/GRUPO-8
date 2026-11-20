@@ -290,26 +290,69 @@ footer a {
 #contenedor-contacto {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
+    gap: 1.75rem;
+    margin: 2rem 0;
+}
+
+#contenedor-contacto > article {
+    padding: 1.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
 }
 
 #contenedor-contacto ul {
-    text-align: center;
-    gap: 10px;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75;
 }
 
 /*Formulario*/
 #formulario form {
-    max-width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin: 0 auto;
+    gap: 0.5rem;
+    max-width: 600px;
 }
 
-#formulario {
+#formulario label {
+    font-weight: 600;
+    margin-top: 0.35rem;
+}
+
+#formulario input,
+#formulario textarea {
+    width: 100%;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+}
+
+#formulario textarea {
+    resize: vertical;
+}
+
+#formulario button[type="submit"] {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+#mensaje {
+    margin-top: 2.5rem;
+    padding: 1.25rem 0;
+    border-top: 1px solid #dee2e6;
     text-align: center;
+}
+
+[data-bs-theme] #contenedor-contacto {
+    border-color: #373b3e;
+}
+
+[data-bs-theme] #formulario input,
+[data-bs-theme] #formulario textarea {
+    background-color: #1f2327;
+    border-color: #495057;
+    color: #f8f9fa;
 }
