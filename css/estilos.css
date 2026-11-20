@@ -234,7 +234,7 @@ body::after {
     border-bottom-color: #373b3e;
 }
 
-[data-bs-theme] .tarjeta-seccion {
+[data-bs-theme="oscuro"] .tarjeta-seccion {
     background-color: #2b3035;
     border-color: #373b3e;
     box-shadow: 0 2px 6px rgba(0,0,0, 0.25);
@@ -346,12 +346,12 @@ footer a {
     text-align: center;
 }
 
-[data-bs-theme] #contenedor-contacto {
+[data-bs-theme="oscuro"] #contenedor-contacto {
     border-color: #373b3e;
 }
 
-[data-bs-theme] #formulario input,
-[data-bs-theme] #formulario textarea {
+[data-bs-theme="oscuro"] #formulario input,
+[data-bs-theme="oscuro"] #formulario textarea {
     background-color: #1f2327;
     border-color: #495057;
     color: #f8f9fa;
